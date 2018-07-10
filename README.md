@@ -1,1 +1,0 @@
-# cloudinary-hugo-lightbox
