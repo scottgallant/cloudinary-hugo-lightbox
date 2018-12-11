@@ -4,12 +4,16 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- path: content
+- type: directory
+  path: content
   label: Pages
   create: all
-- path: content/posts
+  match: "*"
+- type: directory
+  path: content/posts
   label: Posts
   create: all
+  match: "**/*"
 upload_dir: hugo/uploads
 public_path: "/uploads"
 front_matter_path: ''
